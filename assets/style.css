@@ -1,0 +1,191 @@
+/* Applies to whole page. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body background color */
+body {
+    background-color: #d6e6c6;
+}
+
+/* Header styling. */
+.header {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:darkolivegreen; 
+    color: #e6f3e0;
+}
+
+/* My last name in Header. */
+.header h1 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+/* The next three Div styles apply to the navigation menu, top right in the header. */
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+}
+
+/* Navigation anchors in header */
+a {
+    color: #e6f3e0;
+    text-decoration: none;
+}
+
+/* This is the main image on the page. */
+.hero {
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url("./images/20220402_152752.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+h2 {
+    text-align: left;
+    background-color: #112e13;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-left: 40px;
+    height: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    padding: 40px;
+    height: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #112e13;
+    color: #ffffff;
+}
+
+.about-me img {
+    border-radius: 3px;
+    display: inline;
+    height: 260px;
+    float: left;
+}
+
+/* Formats the text in the Main */
+p {
+    font-size: 18px;
+    display: inline;
+    padding-inline-start: 10px;
+    flex: 0 0 70%;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100%;
+    padding: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #112e13;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    height: 300px;
+    width: 300px;
+    padding: 150px 150px 150px 150px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-style:inset;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.horiseon, .platypus {
+    height: 300px;
+    width: 300px; 
+}
+
+.contact-me-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    min-height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #112e13;
+    color: #ffffff;
+}
+
+
+.contact-me-container {
+    padding-top: 15px;
+    margin-right: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    min-height: 100%;
+   
+    background-color: #112e13;
+    color: #ffffff;
+   }
+
+.contact-me-container ul {
+    list-style-type: none;
+} 
+
+.contact-me-container ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+/* Navigation anchors in header */
+a {
+    color: #e6f3e0;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+/* Formatting for footer section. */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 10px;
+}
