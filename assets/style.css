@@ -66,14 +66,15 @@ h2 {
     text-align: left;
     background-color: #112e13;
     color: #ffffff;
-    padding-top: 15px;
-    padding-left: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
     height: auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
 }
 
-.about-me {
+.about-me-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,7 +86,7 @@ h2 {
     color: #ffffff;
 }
 
-.about-me img {
+.about-me-container img {
     border-radius: 3px;
     display: inline;
     height: 260px;
@@ -102,37 +103,59 @@ p {
 
 .work-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    min-height: 100%;
-    padding: 2rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #112e13;
-    color: #ffffff;
-    margin-bottom: 5px;
-}
-
-.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
-    height: 300px;
-    width: 300px;
-    padding: 150px 150px 150px 150px;
-    margin-bottom: 20px;
-    border-color: black;
-    border-style:inset;
-    display: flex;
     justify-content: center;
-    align-items: center; 
+    gap: 10px;
+    list-style: none;
+    background-color: #112e13;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .work-container > li {
+    flex-basis: 350px; /*width: 350px;*/
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .work-container::after {
+    content: "";
+    flex-basis: 350px;
+  }
+  
+  .work-container li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 14, 2, 0.63);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-style: inset;
+    border-color: #112e13;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    color: #ffffff;
-    text-align: center;
-}
-
-.horiseon, .platypus {
-    height: 300px;
-    width: 300px; 
-}
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover */
+  .work-container li:hover .overlay {
+    transform: scale(1);
+  }
 
 .contact-me-container {
     display: flex;
@@ -144,23 +167,8 @@ p {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: #112e13;
     color: #ffffff;
-}
-
-
-.contact-me-container {
-    padding-top: 15px;
-    margin-right: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    min-height: 100%;
-   
-    background-color: #112e13;
-    color: #ffffff;
-   }
-
-.contact-me-container ul {
     list-style-type: none;
-} 
+}
 
 .contact-me-container ul li {
     display: inline-flex;
