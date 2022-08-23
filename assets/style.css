@@ -173,8 +173,8 @@ p {
 .contact-me-container ul li {
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-decoration: underline;
     font-size: 20px;
 }
@@ -187,13 +187,15 @@ a {
 }
 
 /* Formatting for footer section. */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+footer {
+    padding: 1px;
+    display: inline;
+    
 }
 
-.footer h2 {
-    font-size: 10px;
+footer h4 {
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:#112e13
 }
