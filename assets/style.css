@@ -18,7 +18,7 @@ body {
     color: #e6f3e0;
 }
 
-/* My last name in Header. */
+/* Business name in header. */
 .header h1 {
     display: inline-block;
     font-size: 40px;
@@ -43,13 +43,14 @@ body {
     text-decoration: underline;
 }
 
+/* TODO: The navigation links at the top don't move correctly when the screensize is adjusted. Fix? */
 /* Navigation anchors in header */
 a {
     color: #e6f3e0;
     text-decoration: none;
-}
+ }
 
-/* This is the main image on the page. */
+/* This is the banner. */
 .hero {
     height: 200px;
     width: 100%;
@@ -60,8 +61,7 @@ a {
     background-position: center;
 }
 
-
-
+/* Headlines. */
 h2 {
     text-align: left;
     background-color: #112e13;
@@ -74,6 +74,7 @@ h2 {
     font-size: 25px;
 }
 
+/* Container for the About Me section. */
 .about-me-container {
     display: flex;
     flex-direction: row;
@@ -86,6 +87,7 @@ h2 {
     color: #ffffff;
 }
 
+/* Circular profile picture. */
 .about-me-container img {
     border-radius: 3px;
     display: inline;
@@ -93,7 +95,7 @@ h2 {
     float: left;
 }
 
-/* Formats the text in the Main */
+/* My bio. */
 p {
     font-size: 18px;
     display: inline;
@@ -101,7 +103,8 @@ p {
     flex: 0 0 70%;
 }
 
-/* TODO: The portfolio images aren't wrapping quite the way I want. See notes. */
+/* Container for images and links to the work samples. */
+/* TODO: The portfolio images aren't wrapping quite the way I want. See notes.  */
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +136,7 @@ p {
     border-radius: 5px;
   }
   
+  /* Code for the overlay that appears when you hover over a work sample pic. */
   .overlay {
     position: absolute;
     width: 100%;
@@ -155,11 +159,12 @@ p {
     text-align: center;
   }
   
-  /* hover */
+  /* Hover feature.*/
   .work-container li:hover .overlay {
     transform: scale(1);
   }
 
+  /* Next three: bottom container for contact icons. */
 .contact-me-container {
     display: flex;
     flex-direction: row;
@@ -181,15 +186,9 @@ p {
     list-style-type: none;
 }
 
+/* Height of the link icons. */
 .contact-me-container li img {
     height: 100px;
-}
-
-/* Navigation anchors in header */
-a {
-    color: #e6f3e0;
-    text-decoration: none;
-    margin-bottom: 50px;
 }
 
 /* Formatting for footer section. */
