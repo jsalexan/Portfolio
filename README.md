@@ -18,19 +18,19 @@ By meeting these goals, this webpage will showcase the work in a clear, professi
 The website is hosted by GitHub pages. <br>
 You can find it here: [Link to Portfolio webpage](https://jsalexan.github.io/portfolio/)
 <br><br>
-The repository is on GitHub: [Link to GitHub repository for Portfolio project.](https://github.com/jsalexan/portfolio) <br>
+The repository is on GitHub: [Link to GitHub repository for Portfolio project.](https://github.com/jsalexan/portfolio/) <br>
 There you will find following : index.html, README, and license files, plus an Access folder containing images, a pdf and style.css files.
 
 <br>
 
 ## Usage
 The website (link above) was created to be used with various screen sizes, including desktop, pads, and cell phones. 
-![Screen capture of the webpage.](./assets/images/Screencapture%20of%20Horiseon%20webpage.png)
+![Screen capture of the webpage.](./assets/images/Portfolio%20screenshot.png)
 
 <br>
 
 ## Credits
-The project team consists of the **UW Full Stack Web Development Bootcamp** instructors, teacher assistants, and students, in particular those in the Panic Problems study group. The work was reviewed prior to launch by Cory Junier, who also provided guidance on flexboxes.
+The project team consists of the **UW Full Stack Web Development Bootcamp** instructors, teacher assistants, and students, in particular those in the Panic Problems study group. The work was reviewed prior to launch by my tutor, Cory Junier, who helped me troubleshoot some design issues and reviewed the responsiveness of the site.
 <br>
 <br>
 **Third Party References and Tutorials include:** 
@@ -41,9 +41,11 @@ https://www.canva.com/
 
 https://linkedphone.com/blog/how-to-add-click-to-dial-to-website/
 
-https://blog.logrocket.com/how-create-responsive-image-gallery-css-flexbox/#css-flexbox-overview
+https://www.w3schools.com/css/css3_images.asp
 
 https://www.markdownguide.org/cheat-sheet/
+
+https://zapier.com/blog/full-page-screenshots-in-chrome/
 
 <br>
 
@@ -68,7 +70,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <br>
 
 ## Badges
-![GitHub](https://img.shields.io/github/license/jsalexan/horiseon-code-refactor)
+![GitHub](https://img.shields.io/github/license/jsalexan/portfolio/)
 
 
 

@@ -5,17 +5,25 @@
     margin: 0;
 }
 
+  /* Most frequently used colors, saved as variables for consistency. */
+:root {
+    --dark-green: #112e13;
+    --olive-green: darkolivegreen;
+    --light-green: #e6f3e0;
+    --text-color: #ffffff;
+}
+
 /* Body background color */
 body {
-    background-color: #d6e6c6;
+    background-color: var(--olive-green);
 }
 
 /* Header styling. */
 .header {
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:darkolivegreen; 
-    color: #e6f3e0;
+    background-color: var(--olive-green);
+    color: var(--light-green);;
 }
 
 /* Business name in header. */
@@ -43,10 +51,9 @@ body {
     text-decoration: underline;
 }
 
-/* TODO: The navigation links at the top don't move correctly when the screensize is adjusted. Fix? */
 /* Navigation anchors in header */
 a {
-    color: #e6f3e0;
+    color: var(--light-green);
     text-decoration: none;
  }
 
@@ -61,17 +68,18 @@ a {
     background-position: center;
 }
 
-/* Headlines. */
+/* All page headings. */
 h2 {
     text-align: left;
-    background-color: #112e13;
-    color: #ffffff;
+    background-color: var(--dark-green);
+    color: var(--text-color);
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
     height: auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    text-decoration: underline;
 }
 
 /* Container for the About Me section. */
@@ -83,8 +91,8 @@ h2 {
     padding: 40px;
     height: auto;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #112e13;
-    color: #ffffff;
+    background-color: var(--dark-green);
+    color: var(--text-color);
 }
 
 /* Circular profile picture. */
@@ -104,28 +112,23 @@ p {
 }
 
 /* Container for images and links to the work samples. */
-/* TODO: The portfolio images aren't wrapping quite the way I want. See notes.  */
 .work-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     list-style: none;
-    background-color: #112e13;
+    background-color: var(--dark-green);
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 5px;
+    /* flex-basis: 80%; */
   }
   
   .work-container li {
-    flex-basis: 350px; /*width: 350px;*/
+    flex-basis: 350px; width: 350px;
     position: relative;
     cursor: pointer;
-  }
-  
-  .work-container::after {
-    /* TODO: What is the content? It makes space, but doesn't seem to be the right way to do that. */
-    content: "";
-    flex-basis: 80%;
   }
   
   .work-container li img {
@@ -146,13 +149,12 @@ p {
     left: 0;
     transform: scale(0);
     transition: all 0.2s 0.1s ease-in-out;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    border-style: inset;
-    border-color: #112e13;
+    color: var(--text-color);
+    border-radius: 8px;
+    border-style: double;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    /* center overlay text */
+    /* Centering overlay text */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,9 +175,9 @@ p {
     padding: 10px;
     min-height: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #112e13;
-    color: #ffffff;
-}
+    background-color: var(--dark-green);
+    color: var(--text-color);
+ }
 
 .contact-me-container ul li {
     display:inline;
@@ -197,9 +199,12 @@ footer {
     display: inline;
 }
 
-footer h4 {
+footer h3 {
     font-size: 14px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color:#112e13
+    background-color: var(--olive-green);
 }
+
+
+  
