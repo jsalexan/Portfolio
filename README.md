@@ -16,9 +16,9 @@ By meeting these goals, this webpage will showcase the work in a clear, professi
 
 ## Installation
 The website is hosted by GitHub pages. <br>
-You can find it here: [Link to Portfolio webpage](https://jsalexan.github.io/portfolio/)
+You can find it here: [Link to Portfolio webpage](https://jsalexan.github.io/Portfolio/)
 <br><br>
-The repository is on GitHub: [Link to GitHub repository for Portfolio project.](https://github.com/jsalexan/portfolio/) <br>
+The repository is on GitHub: [Link to GitHub repository for Portfolio project.](https://jsalexan.github.io/Portfolio/) <br>
 There you will find following : index.html, README, and license files, plus an Access folder containing images, a pdf and style.css files.
 
 <br>
